@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="bienvenublock" style="margin-bottom: 15px; padding: 10px; background: #e0f2fe; border-radius: 6px;">
+        <label for="usernameInput">votre nom</label>
+        <input type="text" id="usernameInput" placeholder="votre nom va apparaitre ici">
+        <h3 id="messageBienvenu" style="margin-top: 10px; color: #0369a1;">bienvenu dans le JS lab!</h3>
+        <script>
+            window.onload = function () {
+                let nomSaisi = prompt("Bienvenue ! Quel est votre nom ?");
+                document.getElementById('usernameInput').value = nomSaisi;
+                if (nomSaisi !== null && nomSaisi.trim() !== "") {
+                    alert("bienvenu a ce site educatif ")
+                }
+            };
+        </script>
+    </div>
+</body>
+
+</html>
